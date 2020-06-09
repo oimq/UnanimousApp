@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/l_tab_background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/l_tab_button_path_retry"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:background="@drawable/button_shape"
+        android:onClick="button_pos_event"
+        android:text="@string/s_tab_button_path_retry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/l_tab_button_back"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_shape"
+        android:onClick="button_back_event"
+        android:text="@string/s_tab_button_back_to_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_tab_button_path_find" />
+
+    <Button
+        android:id="@+id/l_tab_button_path_find"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_shape"
+        android:onClick="button_run_event"
+        android:text="@string/s_tab_button_path_find"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_tab_button_path_retry" />
+
+    <TextView
+        android:id="@+id/l_text_start_pos"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Start Pos"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/l_text_goal_pos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/l_text_goal_pos"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Goal Pos"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/l_tab_button_path_retry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

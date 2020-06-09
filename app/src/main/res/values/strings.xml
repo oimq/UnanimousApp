@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Unanimous</string>
+
+    <!-- layout tab propertise -->
+    <string name="s_tab_button_find">길찾기</string>
+    <string name="s_tab_button_3d">다운로드</string>
+    <string name="s_tab_text_maplist">Map list</string>
+    <string name="s_tab_button_update_map">업데이트</string>
+    <string name="s_tab_button_path_retry">위치 선택</string>
+    <string name="s_tab_button_path_find">실행</string>
+    <string name="s_tab_button_back_to_map">끝내기</string>
+
+</resources>
